@@ -38,7 +38,7 @@ class WorkoutManager:
             index = int(input("Enter the number of the workout to edit: ")) - 1
             if 0 <= index < len(base.workouts):
                 name = input("Enter the new name for the workout: ")
-                reps = input("Enter the new number of reps: ")
+                reps = input("Enter the new number of reps:3 ")
                 sets = input("Enter the new number of sets: ")
                 if name and reps.isdigit() and sets.isdigit():
                     base.workouts[index] = (name, int(reps), int(sets))
